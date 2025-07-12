@@ -4,7 +4,7 @@ import "./globals.css";
 import ReactLenis from "lenis/react";
 import { ViewTransitions } from "next-view-transitions";
 import { ThemeProvider } from "next-themes";
-
+import { NavbarDemo } from "@/components/landing/NavbarDemo";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -39,9 +39,9 @@ export default function RootLayout({
         >
           <ViewTransitions>
             <ReactLenis root>
-           
+        
               {children}
-              </ReactLenis>
+            </ReactLenis>
           </ViewTransitions>
         </ThemeProvider>
       </body>

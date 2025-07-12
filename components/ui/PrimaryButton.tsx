@@ -50,46 +50,53 @@ const StyledWrapper = styled.div<{
     font-size: 1em;
     color: white;
     background: #212121;
-
     border-radius: 0.5em;
     border: 0;
-    z-index: 20;
-
-    position: relative;
+     position: relative;
+    z-index: 1;
 
     ${({ variant }) =>
       variant === "secondary" &&
       `
       width: 136.04px;
       height: 48px;
-      border: 1px solid #D1D5DB;
+      border: 1px solid #e5e7eb;
       background: transparent;
       color: #212121;
     `}
   }
 
   .button:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 1em 0.45em rgba(0, 0, 0, 0.1);
-    background: linear-gradient(45deg, #212121, #252525);
-
     outline: 0;
+
+    ${({ variant }) =>
+      variant !== "primary" &&
+      `
+        transform: scale(1.05);
+        box-shadow: 0 0 1em 0.45em rgba(0, 0, 0, 0.1);
+        background: linear-gradient(45deg, #212121, #252525);
+      `}
 
     ${({ variant }) =>
       variant === "secondary" &&
       `
-      background: transparent;
-  
-  
-
-    `}
+        background: transparent;
+      `}
   }
 
   .icon {
     fill: white;
     width: 1em;
     height: 1em;
-    transform: none;
+    transition: transform 0.3s ease;
+  }
+
+  .button:hover .icon {
+    ${({ variant }) =>
+      variant === "primary" &&
+      `
+        transform: translate(3px, -3px);
+      `}
   }
 `;
 

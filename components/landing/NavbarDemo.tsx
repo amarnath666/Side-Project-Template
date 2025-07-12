@@ -10,7 +10,7 @@ import {
   MobileNavHeader,
   MobileNavToggle,
   MobileNavMenu,
-} from "./Navbar"
+} from "./Navbar";
 import { useState } from "react";
 
 export function NavbarDemo() {
@@ -32,7 +32,7 @@ export function NavbarDemo() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <div className="relative w-full">
+    <div className="relative z-50 w-full h-full mt-6 ">
       <Navbar>
         {/* Desktop Navigation */}
         <NavBody>
@@ -42,10 +42,10 @@ export function NavbarDemo() {
             <NavbarButton variant="secondary">Login</NavbarButton>
             {/* <NavbarButton variant="primary">Book a call</NavbarButton> */}
             <PrimaryButton
-            variant="navbar"
-            name={
-              "Book a call"
-            } onClick={() => console.log("clicked")} />
+              variant="navbar"
+              name={"Book a call"}
+              onClick={() => console.log("clicked")}
+            />
           </div>
         </NavBody>
 
@@ -92,9 +92,6 @@ export function NavbarDemo() {
           </MobileNavMenu>
         </MobileNav>
       </Navbar>
-      {/* <DummyContent /> */}
-
-      {/* Navbar */}
     </div>
   );
 }
