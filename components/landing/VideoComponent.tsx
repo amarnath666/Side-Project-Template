@@ -10,7 +10,7 @@ const VideoComponent = () => {
       initial="hidden"
       animate="visible"
       transition={{ delay: 0.6 }}
-      className="w-full h-full  rounded-md pb-[130px] mx-auto max-w-[1366px] px-[60px] relative"
+      className="w-full h-full  rounded-lg pb-[130px] mx-auto max-w-[1366px] px-[60px] relative"
     >
       <div className=" relative">
         <div className="relative transform hover:scale-[1.02] transition-transform duration-300">

@@ -54,6 +54,7 @@ const StyledWrapper = styled.div<{
     border: 0;
      position: relative;
     z-index: 1;
+    width: 100%;
 
     ${({ variant }) =>
       variant === "secondary" &&
@@ -72,7 +73,7 @@ const StyledWrapper = styled.div<{
     ${({ variant }) =>
       variant !== "primary" &&
       `
-        transform: scale(1.05);
+        transform: scale(1.02);
         box-shadow: 0 0 1em 0.45em rgba(0, 0, 0, 0.1);
         background: linear-gradient(45deg, #212121, #252525);
       `}
