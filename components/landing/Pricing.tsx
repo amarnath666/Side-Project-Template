@@ -1,9 +1,8 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import { Check } from "lucide-react";
 import PrimaryButton from "../ui/PrimaryButton";
-import HeroButton from "../ui/HeroButton";
 
 interface PricingFeature {
   name: string;
@@ -66,7 +65,7 @@ const defaultTiers: PricingTier[] = [
     name: "Enterprise",
     price: 160,
     period: "month",
-    description: "Best for large companies and teams requiring high security",
+    description: "Best for growing startups and growth companies",
     buttonText: "Sign Up with Enterprise",
     buttonVariant: "secondary",
     features: [
@@ -91,8 +90,8 @@ const PricingTable: React.FC<PricingTableProps> = ({
   };
 
   return (
-    <div className="min-h-screen  text-gray-900 p-8 dark:bg-gray-900 dark:text-white">
-      <div className="max-w-7xl mx-auto">
+    <div className="  text-gray-900 dark:bg-gray-900 dark:text-white py-[100px]">
+      <div className="max-w-[1366px] w-full px-[60px] mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold mb-4">Choose Your Plan</h1>
@@ -106,7 +105,7 @@ const PricingTable: React.FC<PricingTableProps> = ({
           {tiers.map((tier) => (
             <div
               key={tier.id}
-              className="bg-gray-50 border border-gray-200 rounded-xl p-4 relative transition-all duration-300 hover:shadow-xl overflow-visible dark:bg-gray-800 dark:border-gray-700"
+              className="bg-gray-50 border border-gray-200 rounded-2xl p-4 relative transition-all duration-300  overflow-visible dark:bg-gray-800 dark:border-gray-700"
             >
               {tier.isPopular && (
                 <div className="absolute top-8 right-8">
@@ -116,7 +115,7 @@ const PricingTable: React.FC<PricingTableProps> = ({
                 </div>
               )}
               {/* Header */}
-              <div className="bg-white border border-gray-200  rounded-lg p-4 dark:bg-gray-800 mt-auto" >
+              <div className="bg-white border border-gray-200 rounded-2xl p-4 dark:bg-gray-800 flex flex-col">
                 <div className="text-left mb-6">
                   <h3 className="text-2xl font-bold mb-2">{tier.name}</h3>
                   <div className="mb-4">
@@ -132,15 +131,13 @@ const PricingTable: React.FC<PricingTableProps> = ({
                   </p>
                 </div>
 
-                {/* CTA Button */}
-                {/* <button className={getButtonClasses(tier.buttonVariant)}>
-                {tier.buttonText}
-              </button> */}
-                <PrimaryButton
-                  variant="navbar"
-                  onClick={console.log}
-                  name={tier.buttonText}
-                />
+                <div className="mt-auto">
+                  <PrimaryButton
+                    variant="navbar"
+                    onClick={console.log}
+                    name={tier.buttonText}
+                  />
+                </div>
               </div>
 
               {/* Features */}
@@ -173,13 +170,6 @@ const PricingTable: React.FC<PricingTableProps> = ({
               </div>
             </div>
           ))}
-        </div>
-
-        {/* Footer */}
-        <div className="text-center mt-12">
-          <p className="text-sm text-gray-600 dark:text-gray-400">
-            All plans include 24/7 support and a 30-day money-back guarantee
-          </p>
         </div>
       </div>
     </div>

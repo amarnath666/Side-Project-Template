@@ -74,16 +74,17 @@ export default function Hero() {
                 animate={{ opacity: 0.4, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.5 }}
               >
-                Page That Converts
+                Page That Converts 
               </motion.span>
             </motion.p>
           </motion.div>
 
           {/* Description - Fade in with slight delay */}
           <motion.p
-            className="text-lg py-7 text-neutral-900"
+            className="text-lg text-gray-600 dark:text-gray-300 py-7 "
             variants={fadeInUpVariants}
           >
+           
             Engage your audience, tell your story, and get early traction
             effortlessly, all with a stunning, responsive design that builds
             trust, captures leads, and helps your startup stand out in a crowded

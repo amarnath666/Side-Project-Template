@@ -43,6 +43,7 @@
   --radius-xl: calc(var(--radius) + 4px);
   --color-filter-blur-20: blur(20px);
   --color-filter-blur-25: blur(25px);
+  --color-background: hsl(var(--background));
 
   /* keyframes */
   @keyframes pop-blob {
@@ -88,6 +89,16 @@
       background-position: 0% 0%;
     }
   }
+
+  @keyframes bg-position {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+
 
   /* animation */
   --animate-pop-blob: pop-blob 5s infinite;
