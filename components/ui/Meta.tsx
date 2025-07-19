@@ -13,7 +13,7 @@ export const siteConfig = {
   name: "Side Project Template",
   title: 'Side Project Template',
   description: 'Side Project Template',
-  url: "https://sidproject.amarn.me",
+  url: "https://sidekick.amarn.me",
   ogImage: '/images/hero.png',
   author: {
     name: "Amarnath Dhumal",

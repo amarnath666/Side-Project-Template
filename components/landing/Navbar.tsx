@@ -245,7 +245,7 @@ export const NavbarLogo = () => {
         height={30}
       /> */}
       <span className="font-medium text-black text-[16px] dark:text-white">
-        Side Project
+        SideKick
       </span>
     </a>
   );
