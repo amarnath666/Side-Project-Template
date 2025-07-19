@@ -88,7 +88,7 @@ export function MarqueeDemoVertical() {
         <h1 className="text-4xl font-bold mb-4 text-center">
           What People Are Saying
         </h1>
-        <p className="text-lg text-gray-600 dark:text-gray-300 text-center">
+        <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300 text-center">
           Hear from makers, founders, and creatives who’ve tried it unfiltered
           and honest.
         </p>

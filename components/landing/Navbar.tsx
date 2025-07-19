@@ -69,7 +69,7 @@ export const Navbar = ({ children, className }: NavbarProps) => {
       ref={ref}
       // IMPORTANT: Change this to class of `fixed` if you want the navbar to be fixed
       className={cn(
-        "fixed inset-x-0 top-2 z-50 w-full  max-w-[1366px] mx-auto px-13",
+        "fixed inset-x-0 top-2 z-50 w-full  max-w-[1366px] mx-auto px-4 sm:px-13",
         className
       )}
     >
@@ -158,7 +158,7 @@ export const MobileNav = ({ children, className, visible }: MobileNavProps) => {
         width: visible ? "90%" : "100%",
         paddingRight: visible ? "12px" : "0px",
         paddingLeft: visible ? "12px" : "0px",
-        borderRadius: visible ? "4px" : "2rem",
+        borderRadius: visible ? "9999px" : "9999px",
         y: visible ? 20 : 0,
       }}
       transition={{
@@ -236,7 +236,7 @@ export const NavbarLogo = () => {
   return (
     <a
       href="/"
-      className="relative z-20 mr-4 flex items-center space-x-2  py-3 text-sm font-normal text-black"
+      className="relative z-20 mr-4 flex  items-center space-x-2  py-3 text-sm font-normal text-black"
     >
       {/* <img
         src="https://assets.aceternity.com/logo-dark.png"
@@ -244,7 +244,7 @@ export const NavbarLogo = () => {
         width={30}
         height={30}
       /> */}
-      <span className="font-medium text-black text-[16px] dark:text-white">
+      <span className="font-medium text-black text-[16px] dark:text-white ">
         SideKick
       </span>
     </a>

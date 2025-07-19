@@ -7,7 +7,7 @@ export default function Features() {
         <h1 className="text-4xl font-bold mb-4 text-center">
           Features
         </h1>
-          <p className="text-lg text-gray-600 dark:text-gray-300 text-center">
+          <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300 text-center">
             Everything you need to build and showcase your product
           </p>
         <div className="mt-8 grid gap-4 sm:mt-16 lg:grid-cols-3 lg:grid-rows-2">

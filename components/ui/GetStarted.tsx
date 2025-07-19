@@ -14,7 +14,7 @@ export default function GetStarted() {
             Trusted by 500+ Users
           </h1>
 
-          <p className="text-lg mt-4 mb-8 max-w-md leading-[120%] tracking-[0em] text-gray-800">
+          <p className="text-base sm:text-lg mt-4 mb-8 max-w-md leading-[120%] tracking-[0em] text-gray-800">
             Join a thriving community that's already discovering something new —
             connect, explore, and grow with us.
           </p>

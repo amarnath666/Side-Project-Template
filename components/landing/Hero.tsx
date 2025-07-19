@@ -83,7 +83,7 @@ export default function Hero() {
 
           {/* Description - Fade in with slight delay */}
           <motion.p
-            className="text-lg text-gray-600  py-7 "
+            className="text-base sm:text-lg text-gray-600  py-7 "
             variants={fadeInUpVariants}
           >
             Start building instantly with pre-designed components perfect for

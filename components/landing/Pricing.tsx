@@ -95,7 +95,7 @@ const PricingTable: React.FC<PricingTableProps> = ({
         {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold mb-4 text-center">Choose Your Plan</h1>
-          <p className="text-lg text-gray-600 ">
+          <p className="text-base sm:text-lg text-gray-600 ">
             Select the perfect plan for your financial management needs
           </p>
         </div>
