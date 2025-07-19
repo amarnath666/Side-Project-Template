@@ -10,9 +10,9 @@ export interface PageMeta {
 
 // Base site configuration
 export const siteConfig = {
-  name: "Side Project Template",
+  name: "SideKick",
   title: 'Side Project Template',
-  description: 'Side Project Template',
+  description: 'Side Project Template that lets you start your side project in mins.',
   url: "https://sidekick.amarn.me",
   ogImage: '/images/hero.png',
   author: {
