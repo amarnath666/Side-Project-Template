@@ -32,7 +32,7 @@ const defaultTiers: PricingTier[] = [
     name: "Free",
     price: 0,
     period: "month",
-    description: "Great for trying out Finament and for tiny teams",
+    description: "Great for trying out Finament and for tiny remote teams",
     buttonText: "Start for Free",
     buttonVariant: "outline",
     features: [
@@ -90,22 +90,22 @@ const PricingTable: React.FC<PricingTableProps> = ({
   };
 
   return (
-    <div className="  text-gray-900 dark:bg-gray-900 dark:text-white py-[100px]">
-      <div className="max-w-[1366px] w-full px-[60px] mx-auto">
+    <div className="  text-gray-900 dark:bg-gray-900 dark:text-white ">
+      <div className="max-w-[1366px] w-full px-4 md:px-6 lg:px-15 mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold mb-4">Choose Your Plan</h1>
-          <p className="text-lg text-gray-600 dark:text-gray-300">
+          <h1 className="text-4xl font-bold mb-4 text-center">Choose Your Plan</h1>
+          <p className="text-lg text-gray-600 ">
             Select the perfect plan for your financial management needs
           </p>
         </div>
 
         {/* Pricing Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 sm:gap-8 relative">
           {tiers.map((tier) => (
             <div
               key={tier.id}
-              className="bg-gray-50 border border-gray-200 rounded-2xl p-4 relative transition-all duration-300  overflow-visible dark:bg-gray-800 dark:border-gray-700"
+              className="bg-gray-50 border   border-gray-200 rounded-4xl p-4 relative transition-all duration-300  overflow-visible dark:bg-gray-800 dark:border-gray-700"
             >
               {tier.isPopular && (
                 <div className="absolute top-8 right-8">
@@ -115,7 +115,7 @@ const PricingTable: React.FC<PricingTableProps> = ({
                 </div>
               )}
               {/* Header */}
-              <div className="bg-white border border-gray-200 rounded-2xl p-4 dark:bg-gray-800 flex flex-col">
+              <div className="bg-white shadow-sm outline outline-black/5  rounded-4xl p-6 dark:bg-gray-800 flex flex-col ">
                 <div className="text-left mb-6">
                   <h3 className="text-2xl font-bold mb-2">{tier.name}</h3>
                   <div className="mb-4">

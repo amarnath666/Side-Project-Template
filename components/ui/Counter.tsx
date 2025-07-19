@@ -82,7 +82,7 @@ export default function Counter({
   return (
     <span
       ref={ref}
-      className={cn("text-4xl font-bold text-foreground", className)}
+      className={cn("text-[80px] lg:text-[170px] font-semibold text-foreground leading-none", className)}
     />
   );
 }

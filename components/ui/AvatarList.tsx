@@ -53,7 +53,7 @@ export default function AvatarList({
   };
 
   return (
-    <div className={cn("flex py-12", className)}>
+    <div className={cn("flex ", className)}>
       {data.map((item) => (
         <div
           key={item.name}

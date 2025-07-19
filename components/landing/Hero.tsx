@@ -10,7 +10,9 @@ import {
   gridVariants,
 } from "../ui/MotionVariants";
 
+
 export default function Hero() {
+
   return (
     <div className=" w-full relative bg-white overflow-hidden">
       {/* Animated Subtle Diagonal Fade Grid Background */}
@@ -34,13 +36,13 @@ export default function Hero() {
 
       {/* Main Content Container */}
       <motion.div
-        className="relative  items-center justify-center text-center pt-[150px] pb-[60px] flex flex-col w-full max-w-[1366px] mx-auto px-[60px]"
+        className="relative  items-center justify-center text-center pt-[120px] md:pt-[150px] pb-[30px] sm:pb-[50px] flex flex-col w-full max-w-[1366px] mx-auto px-4 sm:px-8 md:px-[60px]"
         variants={containerVariants}
         initial="hidden"
         animate="visible"
       >
         {/* Navbar - Slides in from top */}
-        <motion.div className="absolute pt-6 left-0  w-full h-full">
+        <motion.div className="absolute left-0  w-full h-full">
           <div>
             <NavbarDemo />
           </div>
@@ -56,7 +58,7 @@ export default function Hero() {
           {/* Main Heading - Staggered word animation */}
           <motion.div variants={fadeInUpVariants}>
             <motion.p
-              className="text-6xl font-extrabold pt-7 text-neutral-900"
+              className="text-4xl lg:text-6xl font-extrabold pt-7 text-neutral-900"
               initial="hidden"
               animate="visible"
             >
@@ -65,7 +67,7 @@ export default function Hero() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.3 }}
               >
-                Grow Faster With a Landing
+                Get Started with Your Side
               </motion.span>
               <br />
               <motion.span
@@ -74,21 +76,18 @@ export default function Hero() {
                 animate={{ opacity: 0.4, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.5 }}
               >
-                Page That Converts 
+                Project in Minutes
               </motion.span>
             </motion.p>
           </motion.div>
 
           {/* Description - Fade in with slight delay */}
           <motion.p
-            className="text-lg text-gray-600 dark:text-gray-300 py-7 "
+            className="text-lg text-gray-600  py-7 "
             variants={fadeInUpVariants}
           >
-           
-            Engage your audience, tell your story, and get early traction
-            effortlessly, all with a stunning, responsive design that builds
-            trust, captures leads, and helps your startup stand out in a crowded
-            market.
+            Start building instantly with pre-designed components perfect for
+            getting your ideas off the ground.
           </motion.p>
         </div>
 
@@ -97,7 +96,7 @@ export default function Hero() {
           <motion.div>
             <PrimaryButton
               name="Try for free"
-              onClick={() => console.log("clicked")}
+              onClick={() => window.open("https://github.com/amarnath666/Landing-SAAS", "_blank")}
             />
           </motion.div>
 

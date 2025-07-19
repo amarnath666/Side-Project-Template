@@ -10,7 +10,7 @@ const VideoComponent = () => {
       initial="hidden"
       animate="visible"
       transition={{ delay: 0.6 }}
-      className="w-full h-full  rounded-lg mx-auto max-w-[1366px] px-[60px] relative"
+      className="w-full h-full  rounded-lg mx-auto max-w-[1366px] px-4 sm:px-8 md:px-[60px] relative"
     >
       <div className=" relative">
         <div className="relative transform hover:scale-[1.02] transition-transform duration-300">
@@ -19,7 +19,7 @@ const VideoComponent = () => {
           <div className="absolute inset-0 bg-white rounded-2xl shadow-xl transform translate-y-2 opacity-40"></div>
 
           <div className="relative bg-white rounded-2xl shadow-2xl border border-gray-100/50 overflow-hidden">
-            <div className="p-8">
+            <div className="p-4 sm:p-8">
               <video
                 src="/videos/hero-video.mp4"
                 autoPlay
