@@ -1,10 +1,9 @@
-
-
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import ReactLenis from "lenis/react";
 import { ViewTransitions } from "next-view-transitions";
 import { generateMetadata as getMetadata } from "@/components/ui/Meta";
+import { Analytics } from "@vercel/analytics/next";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,11 +15,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-// Ensure getMetadata returns the correct type for robots.googleBot.max-image-preview
-export const metadata: any = getMetadata('/'); // If getMetadata is in your control, update its return value as below:
-
-// Example fix inside getMetadata (in "@/components/ui/Meta"):
-
+export const metadata: any = getMetadata("/");
 
 export default function RootLayout({
   children,
@@ -38,9 +33,12 @@ export default function RootLayout({
           enableSystem={false}
           forcedTheme="light" // This will force dark mode
         > */}
-          <ViewTransitions>
-            <ReactLenis root>{children}</ReactLenis>
-          </ViewTransitions>
+        <ViewTransitions>
+          <ReactLenis root>
+            {children}
+               <Analytics />
+          </ReactLenis>
+        </ViewTransitions>
         {/* </ThemeProvider> */}
       </body>
     </html>
