@@ -34,18 +34,7 @@ const VideoComponent = () => {
                       {/* Shimmer effect */}
                       <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-30 animate-shimmer"></div>
                       
-                      {/* Play button placeholder */}
-                      <div className="absolute inset-0 flex items-center justify-center">
-                        <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gray-400 rounded-full flex items-center justify-center animate-pulse">
-                          <div className="w-6 h-6 sm:w-8 sm:h-8 bg-gray-500 rounded-sm"></div>
-                        </div>
-                      </div>
-                      
-                      {/* Loading text */}
-                      {/* <div className="absolute bottom-4 left-4 right-4">
-                        <div className="h-3 bg-gray-400 rounded animate-pulse mb-2"></div>
-                        <div className="h-3 bg-gray-400 rounded animate-pulse w-3/4"></div>
-                      </div> */}
+          
                     </div>
                   </div>
                 )}
